@@ -10,7 +10,7 @@ interface CookieCardProps {
   whatsappNumber?: string;
 }
 
-const WHATSAPP_NUMBER = "5500000000000";
+const WHATSAPP_NUMBER = "5544984232401";
 
 const CookieCard = ({ 
   name, 
