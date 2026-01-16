@@ -1,8 +1,8 @@
 import { Instagram, MessageCircle, Heart } from "lucide-react";
 import logo from "@/assets/logo-hingrids.jpeg";
 
-const WHATSAPP_NUMBER = "5500000000000";
-const INSTAGRAM_USER = "hingridsdelicias";
+const WHATSAPP_NUMBER = "5544984232401";
+const INSTAGRAM_USER = "hingrids.deliciasartesanais";
 
 interface FooterProps {
   whatsappNumber?: string;

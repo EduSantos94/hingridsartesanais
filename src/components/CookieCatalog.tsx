@@ -1,48 +1,53 @@
 import CookieCard from "./CookieCard";
+import tradicional from "@/assets/cookies/tradicional.jpeg";
+import paoMel from "@/assets/cookies/pao-mel.jpeg";
+import nutella from "@/assets/cookies/nutella.jpeg";
+import duoKinder from "@/assets/cookies/duo-kinder.jpeg";
+import pistache from "@/assets/cookies/pistache.jpeg";
+import cocadaCremosa from "@/assets/cookies/cocada-cremosa.jpeg";
 
-// Dados de exemplo - substituir pelas fotos e informações reais
 const cookies = [
   {
     id: 1,
-    name: "Chocolate Chip Classic",
-    description: "O clássico cookie com gotas de chocolate belga. Crocante por fora, macio por dentro.",
-    price: "R$ 8,00",
-    image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&h=400&fit=crop",
+    name: "Tradicional",
+    description: "O clássico cookie com gotas de chocolate. Crocante por fora, macio por dentro.",
+    price: "R$ 12,00",
+    image: tradicional,
   },
   {
     id: 2,
-    name: "Red Velvet",
-    description: "Cookie vermelho aveludado com gotas de chocolate branco. Sabor único e especial.",
-    price: "R$ 10,00",
-    image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=400&fit=crop",
+    name: "Pão de Mel Trufado",
+    description: "Cookie de pão de mel trufado com delicioso doce de leite Fonte Azul.",
+    price: "R$ 15,00",
+    image: paoMel,
   },
   {
     id: 3,
-    name: "Brownie Cookie",
-    description: "A combinação perfeita de brownie e cookie. Intenso sabor de chocolate.",
-    price: "R$ 10,00",
-    image: "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400&h=400&fit=crop",
+    name: "Nutella",
+    description: "Cookie recheado com generosas camadas de Nutella. Irresistível!",
+    price: "R$ 15,00",
+    image: nutella,
   },
   {
     id: 4,
-    name: "Cookies & Cream",
-    description: "Cookie de baunilha com pedaços de biscoito Oreo. Uma explosão de sabor!",
-    price: "R$ 10,00",
-    image: "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=400&h=400&fit=crop",
+    name: "Duo Kinder",
+    description: "Cookie com recheio cremoso de Kinder. Chocolate branco e ao leite em harmonia.",
+    price: "R$ 15,00",
+    image: duoKinder,
   },
   {
     id: 5,
-    name: "Ninho com Nutella",
-    description: "Cookie de leite ninho com recheio generoso de Nutella. Derrete na boca!",
-    price: "R$ 12,00",
-    image: "https://images.unsplash.com/photo-1625876981283-be8d3e4bb79c?w=400&h=400&fit=crop",
+    name: "Pistache",
+    description: "Cookie premium com recheio de creme de pistache. Sofisticado e delicioso.",
+    price: "R$ 15,00",
+    image: pistache,
   },
   {
     id: 6,
-    name: "Pistache",
-    description: "Cookie premium de pistache com chocolate branco. Sofisticado e irresistível.",
+    name: "Cocada Cremosa",
+    description: "Cookie de coco com recheio de cocada cremosa. O sabor do Brasil!",
     price: "R$ 15,00",
-    image: "https://images.unsplash.com/photo-1584847801423-852691e41bc7?w=400&h=400&fit=crop",
+    image: cocadaCremosa,
   },
 ];
 

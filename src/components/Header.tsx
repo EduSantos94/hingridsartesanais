@@ -2,8 +2,8 @@ import { Instagram, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo-hingrids.jpeg";
 
-const WHATSAPP_NUMBER = "5500000000000"; // Substituir pelo número real
-const INSTAGRAM_USER = "hingridsdelicias"; // Substituir pelo @ real
+const WHATSAPP_NUMBER = "5544984232401";
+const INSTAGRAM_USER = "hingrids.deliciasartesanais";
 
 interface HeaderProps {
   whatsappNumber?: string;

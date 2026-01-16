@@ -2,8 +2,8 @@ import { MessageCircle, Instagram, Clock, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
-const WHATSAPP_NUMBER = "5500000000000";
-const INSTAGRAM_USER = "hingridsdelicias";
+const WHATSAPP_NUMBER = "5544984232401";
+const INSTAGRAM_USER = "hingrids.deliciasartesanais";
 
 interface HowToOrderProps {
   whatsappNumber?: string;
