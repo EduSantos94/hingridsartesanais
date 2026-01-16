@@ -6,6 +6,7 @@ interface CookieCardProps {
   name: string;
   description: string;
   price: string;
+  weight: string;
   image: string;
   whatsappNumber?: string;
 }
@@ -16,6 +17,7 @@ const CookieCard = ({
   name, 
   description, 
   price, 
+  weight,
   image,
   whatsappNumber = WHATSAPP_NUMBER 
 }: CookieCardProps) => {
@@ -32,7 +34,10 @@ const CookieCard = ({
       </div>
       <CardContent className="p-5">
         <div className="mb-3 flex items-start justify-between gap-2">
-          <h3 className="text-lg font-bold text-foreground">{name}</h3>
+          <div>
+            <h3 className="text-lg font-bold text-foreground">{name}</h3>
+            <span className="text-xs text-muted-foreground">{weight}</span>
+          </div>
           <span className="shrink-0 rounded-full bg-primary px-3 py-1 text-sm font-bold text-primary-foreground">
             {price}
           </span>
