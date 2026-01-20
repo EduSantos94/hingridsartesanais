@@ -10,6 +10,7 @@ export interface Cookie {
   id: number;
   name: string;
   description: string;
+  shortDescription: string;
   price: string;
   weight: string;
   image: string;
@@ -20,6 +21,7 @@ export const cookies: Cookie[] = [
     id: 1,
     name: "Tradicional",
     description: "O clássico cookie com gotas de chocolate. Crocante por fora, macio por dentro.",
+    shortDescription: "Gotas de chocolate",
     price: "R$ 12,00",
     weight: "90-95g",
     image: tradicional,
@@ -28,6 +30,7 @@ export const cookies: Cookie[] = [
     id: 2,
     name: "Pão de Mel Trufado",
     description: "Cookie de pão de mel trufado com delicioso doce de leite Fonte Azul.",
+    shortDescription: "Doce de leite Fonte Azul",
     price: "R$ 15,00",
     weight: "110-120g",
     image: paoMel,
@@ -36,6 +39,7 @@ export const cookies: Cookie[] = [
     id: 3,
     name: "Nutella",
     description: "Cookie recheado com generosas camadas de Nutella. Irresistível!",
+    shortDescription: "Trufado com Nutella",
     price: "R$ 15,00",
     weight: "110-120g",
     image: nutella,
@@ -44,6 +48,7 @@ export const cookies: Cookie[] = [
     id: 4,
     name: "Duo Kinder",
     description: "Cookie com recheio cremoso de Kinder. Chocolate branco e ao leite em harmonia.",
+    shortDescription: "Creme de Kinder Bueno",
     price: "R$ 15,00",
     weight: "110-120g",
     image: duoKinder,
@@ -52,6 +57,7 @@ export const cookies: Cookie[] = [
     id: 5,
     name: "Pistache",
     description: "Cookie premium com recheio de creme de pistache. Sofisticado e delicioso.",
+    shortDescription: "Creme de pistache",
     price: "R$ 15,00",
     weight: "110-120g",
     image: pistache,
@@ -60,6 +66,7 @@ export const cookies: Cookie[] = [
     id: 6,
     name: "Cocada Cremosa",
     description: "Cookie de coco com recheio de cocada cremosa. O sabor do Brasil!",
+    shortDescription: "Cocada cremosa",
     price: "R$ 15,00",
     weight: "110-120g",
     image: cocadaCremosa,
@@ -68,6 +75,7 @@ export const cookies: Cookie[] = [
     id: 7,
     name: "Red Velvet",
     description: "Cookie vermelho aveludado com recheio cremoso. Elegância em cada mordida.",
+    shortDescription: "Brigadeiro de cream cheese",
     price: "R$ 15,00",
     weight: "110-120g",
     image: redVelvet,
