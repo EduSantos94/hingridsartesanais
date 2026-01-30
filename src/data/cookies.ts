@@ -5,6 +5,7 @@ import duoKinder from "@/assets/cookies/duo-kinder.jpeg";
 import pistache from "@/assets/cookies/pistache.jpeg";
 import cocadaCremosa from "@/assets/cookies/cocada-cremosa.jpeg";
 import redVelvet from "@/assets/cookies/red-velvet.jpeg";
+import maracujaBlack from "@/assets/cookies/maracuja-black.jpeg";
 
 export interface Cookie {
   id: number;
@@ -79,5 +80,14 @@ export const cookies: Cookie[] = [
     price: "R$ 15,00",
     weight: "110-120g",
     image: redVelvet,
+  },
+  {
+    id: 8,
+    name: "Maracujá Black",
+    description: "Cookie de cacau black trufado com irresistível recheio de maracujá.",
+    shortDescription: "Cacau black trufado com maracujá",
+    price: "R$ 15,00",
+    weight: "110-120g",
+    image: maracujaBlack,
   },
 ];
