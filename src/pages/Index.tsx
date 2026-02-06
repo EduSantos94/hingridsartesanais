@@ -5,8 +5,8 @@ import HowToOrder from "@/components/HowToOrder";
 import Footer from "@/components/Footer";
 
 // Configurações - substituir pelos dados reais
-const WHATSAPP_NUMBER = "5500000000000"; // Ex: 5511999999999
-const INSTAGRAM_USER = "hingridsdelicias"; // Sem o @
+const WHATSAPP_NUMBER = "5544998860473"; // Ex: 5511999999999
+const INSTAGRAM_USER = "hingrids.deliciasartesanais"; // Sem o @
 
 const Index = () => {
   return (
