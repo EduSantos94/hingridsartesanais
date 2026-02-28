@@ -6,6 +6,7 @@ import pistache from "@/assets/cookies/pistache.jpeg";
 import cocadaCremosa from "@/assets/cookies/cocada-cremosa.jpeg";
 import redVelvet from "@/assets/cookies/red-velvet.jpeg";
 import maracujaBlack from "@/assets/cookies/maracuja-black.jpeg";
+import ouroBranco from "@/assets/cookies/ouro-branco.jpeg";
 
 export interface Cookie {
   id: number;
@@ -89,5 +90,14 @@ export const cookies: Cookie[] = [
     price: "R$ 15,00",
     weight: "110-120g",
     image: maracujaBlack,
+  },
+  {
+    id: 9,
+    name: "Ouro Branco",
+    description: "Cookie recheado com o irresistível chocolate Ouro Branco. Cremosidade incomparável!",
+    shortDescription: "Recheio de Ouro Branco",
+    price: "R$ 15,00",
+    weight: "110-120g",
+    image: ouroBranco,
   },
 ];
