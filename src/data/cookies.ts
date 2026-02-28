@@ -91,4 +91,13 @@ export const cookies: Cookie[] = [
     weight: "110-120g",
     image: maracujaBlack,
   },
+  {
+    id: 9,
+    name: "Ouro Branco",
+    description: "Cookie recheado com o irresistível chocolate Ouro Branco. Cremosidade incomparável!",
+    shortDescription: "Recheio de Ouro Branco",
+    price: "R$ 15,00",
+    weight: "110-120g",
+    image: ouroBranco,
+  },
 ];
