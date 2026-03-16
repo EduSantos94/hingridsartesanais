@@ -1,13 +1,15 @@
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, UtensilsCrossed } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const WHATSAPP_NUMBER = "5500000000000";
+const AIQFOME_LINK = "https://aiqfome.com/PR/goioere/hingrids-deliciais-artesanais";
 
 interface HeroProps {
   whatsappNumber?: string;
+  aiqfomeLink?: string;
 }
 
-const Hero = ({ whatsappNumber = WHATSAPP_NUMBER }: HeroProps) => {
+const Hero = ({ whatsappNumber = WHATSAPP_NUMBER, aiqfomeLink = AIQFOME_LINK }: HeroProps) => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Olá! Gostaria de fazer um pedido de cookies 🍪`;
 
   return (
@@ -39,11 +41,21 @@ const Hero = ({ whatsappNumber = WHATSAPP_NUMBER }: HeroProps) => {
           <Button 
             asChild 
             size="lg"
-            className="gap-2 bg-primary px-8 text-lg hover:bg-primary/90"
+            className="gap-2 bg-red-500 px-8 text-lg hover:bg-red-600"
+          >
+            <a href={aiqfomeLink} target="_blank" rel="noopener noreferrer">
+              <UtensilsCrossed className="h-5 w-5" />
+              Pedir no aiqfome
+            </a>
+          </Button>
+          <Button 
+            asChild 
+            size="lg"
+            className="gap-2 bg-green-600 px-8 text-lg hover:bg-green-700"
           >
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="h-5 w-5" />
-              Fazer Pedido
+              WhatsApp
             </a>
           </Button>
           <Button 
