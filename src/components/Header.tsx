@@ -40,7 +40,7 @@ const Header = ({
             asChild 
             variant="outline" 
             size="sm"
-            className="hidden gap-2 border-red-500 text-red-500 hover:bg-red-50 md:flex"
+            className="hidden gap-2 border-[#9a49b9] text-[#9a49b9] hover:bg-[#9a49b9]/10 md:flex"
           >
             <a href={aiqfomeLink} target="_blank" rel="noopener noreferrer">
               <UtensilsCrossed className="h-4 w-4" />
