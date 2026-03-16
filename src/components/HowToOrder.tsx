@@ -68,7 +68,7 @@ const HowToOrder = ({
           <Button 
             asChild 
             size="lg"
-            className="gap-2 bg-red-500 px-8 hover:bg-red-600"
+            className="gap-2 bg-[#9a49b9] px-8 hover:bg-[#9a49b9]/90"
           >
             <a href={aiqfomeLink} target="_blank" rel="noopener noreferrer">
               <UtensilsCrossed className="h-5 w-5" />

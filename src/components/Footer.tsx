@@ -44,7 +44,7 @@ const Footer = ({
               href={aiqfomeLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-red-500 text-white transition-transform hover:scale-110"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-[#9a49b9] text-white transition-transform hover:scale-110"
               aria-label="aiqfome"
             >
               <UtensilsCrossed className="h-5 w-5" />
