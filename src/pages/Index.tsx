@@ -20,6 +20,7 @@ const Index = () => {
       />
       <main>
         <Hero whatsappNumber={WHATSAPP_NUMBER} aiqfomeLink={AIQFOME_LINK} />
+        <EasterCatalog />
         <CookieCatalog />
         <HowToOrder 
           whatsappNumber={WHATSAPP_NUMBER} 
