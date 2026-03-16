@@ -1,17 +1,20 @@
-import { Instagram, MessageCircle, Heart } from "lucide-react";
+import { Instagram, MessageCircle, Heart, UtensilsCrossed } from "lucide-react";
 import logo from "@/assets/logo-hingrids.jpeg";
 
 const WHATSAPP_NUMBER = "5544984232401";
 const INSTAGRAM_USER = "hingrids.deliciasartesanais";
+const AIQFOME_LINK = "https://aiqfome.com/PR/goioere/hingrids-deliciais-artesanais";
 
 interface FooterProps {
   whatsappNumber?: string;
   instagramUser?: string;
+  aiqfomeLink?: string;
 }
 
 const Footer = ({ 
   whatsappNumber = WHATSAPP_NUMBER, 
-  instagramUser = INSTAGRAM_USER 
+  instagramUser = INSTAGRAM_USER,
+  aiqfomeLink = AIQFOME_LINK
 }: FooterProps) => {
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
   const instagramLink = `https://instagram.com/${instagramUser}`;
@@ -37,6 +40,15 @@ const Footer = ({
           </div>
           
           <div className="flex gap-4">
+            <a 
+              href={aiqfomeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-red-500 text-white transition-transform hover:scale-110"
+              aria-label="aiqfome"
+            >
+              <UtensilsCrossed className="h-5 w-5" />
+            </a>
             <a 
               href={whatsappLink}
               target="_blank"

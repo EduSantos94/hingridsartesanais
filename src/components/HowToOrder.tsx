@@ -1,20 +1,22 @@
-import { MessageCircle, Instagram, Clock, Package } from "lucide-react";
+import { MessageCircle, Instagram, Clock, Package, UtensilsCrossed } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const WHATSAPP_NUMBER = "5544984232401";
 const INSTAGRAM_USER = "hingrids.deliciasartesanais";
+const AIQFOME_LINK = "https://aiqfome.com/PR/goioere/hingrids-deliciais-artesanais";
 
 interface HowToOrderProps {
   whatsappNumber?: string;
   instagramUser?: string;
+  aiqfomeLink?: string;
 }
 
 const steps = [
   {
-    icon: MessageCircle,
-    title: "1. Entre em Contato",
-    description: "Mande uma mensagem pelo WhatsApp ou Instagram com os sabores desejados.",
+    icon: UtensilsCrossed,
+    title: "1. Escolha a Plataforma",
+    description: "Peça pelo aiqfome, WhatsApp ou Instagram - escolha o que for mais conveniente.",
   },
   {
     icon: Package,
@@ -30,7 +32,8 @@ const steps = [
 
 const HowToOrder = ({ 
   whatsappNumber = WHATSAPP_NUMBER, 
-  instagramUser = INSTAGRAM_USER 
+  instagramUser = INSTAGRAM_USER,
+  aiqfomeLink = AIQFOME_LINK
 }: HowToOrderProps) => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Olá! Gostaria de fazer um pedido de cookies 🍪`;
   const instagramLink = `https://instagram.com/${instagramUser}`;
@@ -65,11 +68,21 @@ const HowToOrder = ({
           <Button 
             asChild 
             size="lg"
+            className="gap-2 bg-red-500 px-8 hover:bg-red-600"
+          >
+            <a href={aiqfomeLink} target="_blank" rel="noopener noreferrer">
+              <UtensilsCrossed className="h-5 w-5" />
+              Pedir no aiqfome
+            </a>
+          </Button>
+          <Button 
+            asChild 
+            size="lg"
             className="gap-2 bg-green-600 px-8 hover:bg-green-700"
           >
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="h-5 w-5" />
-              Chamar no WhatsApp
+              WhatsApp
             </a>
           </Button>
           <Button 
@@ -80,7 +93,7 @@ const HowToOrder = ({
           >
             <a href={instagramLink} target="_blank" rel="noopener noreferrer">
               <Instagram className="h-5 w-5" />
-              Seguir no Instagram
+              Instagram
             </a>
           </Button>
         </div>

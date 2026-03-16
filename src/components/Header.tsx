@@ -1,18 +1,21 @@
-import { Instagram, MessageCircle } from "lucide-react";
+import { Instagram, MessageCircle, UtensilsCrossed } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo-hingrids.jpeg";
 
 const WHATSAPP_NUMBER = "5544984232401";
 const INSTAGRAM_USER = "hingrids.deliciasartesanais";
+const AIQFOME_LINK = "https://aiqfome.com/PR/goioere/hingrids-deliciais-artesanais";
 
 interface HeaderProps {
   whatsappNumber?: string;
   instagramUser?: string;
+  aiqfomeLink?: string;
 }
 
 const Header = ({ 
   whatsappNumber = WHATSAPP_NUMBER, 
-  instagramUser = INSTAGRAM_USER 
+  instagramUser = INSTAGRAM_USER,
+  aiqfomeLink = AIQFOME_LINK
 }: HeaderProps) => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Olá! Gostaria de fazer um pedido de cookies 🍪`;
   const instagramLink = `https://instagram.com/${instagramUser}`;
@@ -33,6 +36,17 @@ const Header = ({
         </div>
         
         <div className="flex items-center gap-2">
+          <Button 
+            asChild 
+            variant="outline" 
+            size="sm"
+            className="hidden gap-2 border-red-500 text-red-500 hover:bg-red-50 md:flex"
+          >
+            <a href={aiqfomeLink} target="_blank" rel="noopener noreferrer">
+              <UtensilsCrossed className="h-4 w-4" />
+              <span>aiqfome</span>
+            </a>
+          </Button>
           <Button 
             asChild 
             variant="outline" 
