@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import EasterCatalog from "@/components/EasterCatalog";
 import CookieCatalog from "@/components/CookieCatalog";
 import HowToOrder from "@/components/HowToOrder";
 import Footer from "@/components/Footer";
