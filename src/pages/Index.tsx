@@ -1,13 +1,12 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import EasterCatalog from "@/components/EasterCatalog";
 import CookieCatalog from "@/components/CookieCatalog";
 import HowToOrder from "@/components/HowToOrder";
 import Footer from "@/components/Footer";
 
 // Configurações - substituir pelos dados reais
-const WHATSAPP_NUMBER = "5544998860473"; // Ex: 5511999999999
-const INSTAGRAM_USER = "hingrids.deliciasartesanais"; // Sem o @
+const WHATSAPP_NUMBER = "5544998860473";
+const INSTAGRAM_USER = "hingrids.deliciasartesanais";
 const AIQFOME_LINK = "https://aiqfome.com/PR/goioere/hingrids-deliciais-artesanais";
 
 const Index = () => {
@@ -20,7 +19,6 @@ const Index = () => {
       />
       <main>
         <Hero whatsappNumber={WHATSAPP_NUMBER} aiqfomeLink={AIQFOME_LINK} />
-        <EasterCatalog />
         <CookieCatalog />
         <HowToOrder 
           whatsappNumber={WHATSAPP_NUMBER} 
