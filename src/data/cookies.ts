@@ -2,7 +2,7 @@ import tradicional from "@/assets/cookies/tradicional.jpeg";
 import paoMel from "@/assets/cookies/pao-mel.jpeg";
 import nutella from "@/assets/cookies/nutella.jpeg";
 import duoKinder from "@/assets/cookies/duo-kinder.jpeg";
-import pistache from "@/assets/cookies/pistache.jpeg";
+// import pistache from "@/assets/cookies/pistache.jpeg";
 import cocadaCremosa from "@/assets/cookies/cocada-cremosa.jpeg";
 import redVelvet from "@/assets/cookies/red-velvet.jpeg";
 import maracujaBlack from "@/assets/cookies/maracuja-black.jpeg";
