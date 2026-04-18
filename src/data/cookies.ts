@@ -25,7 +25,7 @@ export const cookies: Cookie[] = [
     description: "O clássico cookie com gotas de chocolate. Crocante por fora, macio por dentro.",
     shortDescription: "Gotas de chocolate",
     price: "R$ 12,00",
-    weight: "90-95g",
+    weight: "100g",
     image: tradicional,
   },
   {
