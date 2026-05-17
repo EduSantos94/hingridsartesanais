@@ -7,6 +7,7 @@ import cocadaCremosa from "@/assets/cookies/cocada-cremosa.jpeg";
 import redVelvet from "@/assets/cookies/red-velvet.jpeg";
 import maracujaBlack from "@/assets/cookies/maracuja-black.jpeg";
 import ouroBranco from "@/assets/cookies/ouro-branco.jpeg";
+import lotusBiscoff from "@/assets/cookies/lotus-biscoff.jpeg";
 
 export interface Cookie {
   id: number;
@@ -99,5 +100,14 @@ export const cookies: Cookie[] = [
     price: "R$ 15,00",
     weight: "110-120g",
     image: ouroBranco,
+  },
+  {
+    id: 10,
+    name: "Lotus Biscoff",
+    description: "Gotas de chocolate branco trufado com creme de Biscoff. Crocância e cremosidade em perfeita harmonia.",
+    shortDescription: "Chocolate branco com creme de Biscoff",
+    price: "R$ 16,90",
+    weight: "110-120g",
+    image: lotusBiscoff,
   },
 ];
