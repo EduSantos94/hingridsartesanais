@@ -111,4 +111,13 @@ export const cookies: Cookie[] = [
     weight: "110-120g",
     image: lotusBiscoff,
   },
+  {
+    id: 11,
+    name: "Tradicional Fit",
+    description: "Massa sem açúcar e proteico 10g.",
+    shortDescription: "Sem açúcar e proteico 10g",
+    price: "R$ 17,90",
+    weight: "95-100g",
+    image: tradicionalFit,
+  },
 ];
