@@ -1,4 +1,5 @@
 import tradicional from "@/assets/cookies/tradicional.jpeg";
+import tradicionalFit from "@/assets/cookies/tradicional-fit.jpeg";
 import paoMel from "@/assets/cookies/pao-mel.jpeg";
 import nutella from "@/assets/cookies/nutella.jpeg";
 import duoKinder from "@/assets/cookies/duo-kinder.jpeg";
