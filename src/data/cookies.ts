@@ -1,4 +1,5 @@
 import tradicional from "@/assets/cookies/tradicional.jpeg";
+import tradicionalFit from "@/assets/cookies/tradicional-fit.jpeg";
 import paoMel from "@/assets/cookies/pao-mel.jpeg";
 import nutella from "@/assets/cookies/nutella.jpeg";
 import duoKinder from "@/assets/cookies/duo-kinder.jpeg";
@@ -109,5 +110,14 @@ export const cookies: Cookie[] = [
     price: "R$ 16,90",
     weight: "110-120g",
     image: lotusBiscoff,
+  },
+  {
+    id: 11,
+    name: "Tradicional Fit",
+    description: "Massa sem açúcar e proteico 10g.",
+    shortDescription: "Sem açúcar e proteico 10g",
+    price: "R$ 17,90",
+    weight: "95-100g",
+    image: tradicionalFit,
   },
 ];
