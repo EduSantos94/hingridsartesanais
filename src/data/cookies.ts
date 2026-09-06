@@ -9,6 +9,7 @@ import redVelvet from "@/assets/cookies/red-velvet.jpeg";
 import maracujaBlack from "@/assets/cookies/maracuja-black.jpeg";
 import ouroBranco from "@/assets/cookies/ouro-branco.jpeg";
 import lotusBiscoff from "@/assets/cookies/lotus-biscoff.jpeg";
+import trufadoWhey from "@/assets/cookies/trufado-whey.jpeg.asset.json";
 
 export interface Cookie {
   id: number;
@@ -119,5 +120,14 @@ export const cookies: Cookie[] = [
     price: "R$ 17,90",
     weight: "95-100g",
     image: tradicionalFit,
+  },
+  {
+    id: 12,
+    name: "Trufado com Whey",
+    description: "Massa sem açúcar trufado com whey com 15g de proteína.",
+    shortDescription: "Sem açúcar, 15g de proteína",
+    price: "R$ 17,90",
+    weight: "95-100g",
+    image: trufadoWhey.url,
   },
 ];
