@@ -20,6 +20,7 @@ export interface Cookie {
   price: string;
   weight: string;
   image: string;
+  category?: "classic" | "fit";
 }
 
 export const cookies: Cookie[] = [
@@ -121,6 +122,7 @@ export const cookies: Cookie[] = [
     price: "R$ 17,90",
     weight: "95-100g",
     image: tradicionalFit,
+    category: "fit",
   },
   {
     id: 12,
@@ -130,6 +132,7 @@ export const cookies: Cookie[] = [
     price: "R$ 19,90",
     weight: "95-100g",
     image: trufadoWhey.url,
+    category: "fit",
   },
   {
     id: 13,
@@ -141,3 +144,6 @@ export const cookies: Cookie[] = [
     image: pacoca.url,
   },
 ];
+
+export const classicCookies = cookies.filter((c) => c.category !== "fit");
+export const fitCookies = cookies.filter((c) => c.category === "fit");
