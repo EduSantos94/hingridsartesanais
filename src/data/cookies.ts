@@ -126,7 +126,7 @@ export const cookies: Cookie[] = [
     name: "Trufado com Whey",
     description: "Massa sem açúcar trufado com whey com 15g de proteína.",
     shortDescription: "Sem açúcar, 15g de proteína",
-    price: "R$ 17,90",
+    price: "R$ 19,90",
     weight: "95-100g",
     image: trufadoWhey.url,
   },
