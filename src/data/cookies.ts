@@ -10,6 +10,7 @@ import maracujaBlack from "@/assets/cookies/maracuja-black.jpeg";
 import ouroBranco from "@/assets/cookies/ouro-branco.jpeg";
 import lotusBiscoff from "@/assets/cookies/lotus-biscoff.jpeg";
 import trufadoWhey from "@/assets/cookies/trufado-whey.jpeg.asset.json";
+import pacoca from "@/assets/cookies/pacoca.jpeg.asset.json";
 
 export interface Cookie {
   id: number;
@@ -129,5 +130,14 @@ export const cookies: Cookie[] = [
     price: "R$ 19,90",
     weight: "95-100g",
     image: trufadoWhey.url,
+  },
+  {
+    id: 13,
+    name: "Paçoca",
+    description: "Cookie trufado com brigadeiro de paçoca.",
+    shortDescription: "Brigadeiro de paçoca",
+    price: "R$ 15,00",
+    weight: "110-120g",
+    image: pacoca.url,
   },
 ];
