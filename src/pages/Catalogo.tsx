@@ -3,20 +3,24 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieCardCompact from "@/components/CookieCardCompact";
 import CookieCardList from "@/components/CookieCardList";
-import { cookies } from "@/data/cookies";
+import { classicCookies, fitCookies, type Cookie } from "@/data/cookies";
 import { ArrowLeft, LayoutGrid, List } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 type ViewMode = "grid" | "list";
+type MenuTab = "classic" | "fit";
 
 const Catalogo = () => {
   const [viewMode, setViewMode] = useState<ViewMode>("grid");
+  const [menu, setMenu] = useState<MenuTab>("classic");
+
+  const list: Cookie[] = menu === "fit" ? fitCookies : classicCookies;
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
-      
+
       <main className="flex-1">
         <div className="container mx-auto px-3 py-4 sm:px-4 sm:py-8">
           <div className="mb-4 flex items-center justify-between gap-3">
@@ -28,14 +32,14 @@ const Catalogo = () => {
               </Button>
               <div>
                 <h1 className="text-xl font-bold text-foreground sm:text-2xl">
-                  Catálogo Completo
+                  {menu === "fit" ? "Cardápio Fitness" : "Catálogo Completo"}
                 </h1>
                 <p className="text-xs text-muted-foreground sm:text-sm">
-                  {cookies.length} sabores disponíveis
+                  {list.length} sabores disponíveis
                 </p>
               </div>
             </div>
-            
+
             <div className="flex rounded-lg border bg-card p-1 sm:hidden">
               <Button
                 variant={viewMode === "grid" ? "default" : "ghost"}
@@ -55,23 +59,48 @@ const Catalogo = () => {
               </Button>
             </div>
           </div>
-          
+
+          <div className="mb-4 inline-flex rounded-full border bg-card p-1">
+            <Button
+              variant={menu === "classic" ? "default" : "ghost"}
+              size="sm"
+              className="h-8 rounded-full px-4 text-xs sm:text-sm"
+              onClick={() => setMenu("classic")}
+            >
+              Tradicionais
+            </Button>
+            <Button
+              variant={menu === "fit" ? "default" : "ghost"}
+              size="sm"
+              className="h-8 rounded-full px-4 text-xs sm:text-sm"
+              onClick={() => setMenu("fit")}
+            >
+              Fitness
+            </Button>
+          </div>
+
+          {menu === "fit" && (
+            <p className="mb-4 rounded-lg bg-muted/60 p-3 text-xs text-muted-foreground sm:text-sm">
+              Sabores com massa sem açúcar e mais proteína, para quem quer se cuidar sem perder o sabor.
+            </p>
+          )}
+
           {viewMode === "grid" ? (
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-              {cookies.map((cookie) => (
+              {list.map((cookie) => (
                 <CookieCardCompact key={cookie.id} cookie={cookie} />
               ))}
             </div>
           ) : (
             <div className="rounded-lg border bg-card p-3">
-              {cookies.map((cookie) => (
+              {list.map((cookie) => (
                 <CookieCardList key={cookie.id} cookie={cookie} />
               ))}
             </div>
           )}
         </div>
       </main>
-      
+
       <Footer />
     </div>
   );
