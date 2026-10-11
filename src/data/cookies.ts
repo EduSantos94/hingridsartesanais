@@ -10,6 +10,7 @@ import maracujaBlack from "@/assets/cookies/maracuja-black.jpeg";
 import ouroBranco from "@/assets/cookies/ouro-branco.jpeg";
 import lotusBiscoff from "@/assets/cookies/lotus-biscoff.jpeg";
 import trufadoWhey from "@/assets/cookies/trufado-whey.jpeg.asset.json";
+import morangoCravejado from "@/assets/cookies/morango-cravejado.png.asset.json";
 // import pacoca from "@/assets/cookies/pacoca.jpeg.asset.json";
 
 export interface Cookie {
@@ -133,6 +134,15 @@ export const cookies: Cookie[] = [
     weight: "95-100g",
     image: trufadoWhey.url,
     category: "fit",
+  },
+  {
+    id: 14,
+    name: "Morango Cravejado",
+    description: "Cookie trufado com morango e cobertura de chocolate branco.",
+    shortDescription: "Trufado com morango",
+    price: "R$ 15,90",
+    weight: "110-120g",
+    image: morangoCravejado.url,
   },
   // {
   //   id: 13,
