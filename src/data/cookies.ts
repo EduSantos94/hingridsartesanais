@@ -11,6 +11,7 @@ import ouroBranco from "@/assets/cookies/ouro-branco.jpeg";
 import lotusBiscoff from "@/assets/cookies/lotus-biscoff.jpeg";
 import trufadoWhey from "@/assets/cookies/trufado-whey.jpeg.asset.json";
 import morangoCravejado from "@/assets/cookies/morango-cravejado.png.asset.json";
+import darkSmores from "@/assets/cookies/dark-smores.jpeg.asset.json";
 // import pacoca from "@/assets/cookies/pacoca.jpeg.asset.json";
 
 export interface Cookie {
@@ -53,24 +54,6 @@ export const cookies: Cookie[] = [
     image: nutella,
   },
   {
-    id: 4,
-    name: "Duo Kinder",
-    description: "Cookie com recheio cremoso de Kinder. Chocolate branco e ao leite em harmonia.",
-    shortDescription: "Creme de Kinder Bueno",
-    price: "R$ 15,00",
-    weight: "110-120g",
-    image: duoKinder,
-  },
-  // {
-  //   id: 5,
-  //   name: "Pistache",
-  //   description: "Cookie premium com recheio de creme de pistache. Sofisticado e delicioso.",
-  //   shortDescription: "Creme de pistache",
-  //   price: "R$ 15,00",
-  //   weight: "110-120g",
-  //   image: pistache,
-  // },
-  {
     id: 6,
     name: "Cocada Cremosa",
     description: "Cookie de coco com recheio de cocada cremosa. O sabor do Brasil!",
@@ -107,6 +90,33 @@ export const cookies: Cookie[] = [
     image: ouroBranco,
   },
   {
+    id: 4,
+    name: "Duo Kinder",
+    description: "Cookie com recheio cremoso de Kinder. Chocolate branco e ao leite em harmonia.",
+    shortDescription: "Creme de Kinder Bueno",
+    price: "R$ 15,90",
+    weight: "110-120g",
+    image: duoKinder,
+  },
+  {
+    id: 14,
+    name: "Morango Cravejado",
+    description: "Cookie trufado com morango e cobertura de chocolate branco.",
+    shortDescription: "Trufado com morango",
+    price: "R$ 15,90",
+    weight: "110-120g",
+    image: morangoCravejado.url,
+  },
+  {
+    id: 15,
+    name: "Dark Smores",
+    description: "Cookie com massa cacau black com gotas de chocolate, trufado com Nutella e marshmallow.",
+    shortDescription: "Cacau black com Nutella e marshmallow",
+    price: "R$ 15,90",
+    weight: "110-120g",
+    image: darkSmores.url,
+  },
+  {
     id: 10,
     name: "Lotus Biscoff",
     description: "Gotas de chocolate branco trufado com creme de Biscoff. Crocância e cremosidade em perfeita harmonia.",
@@ -135,15 +145,15 @@ export const cookies: Cookie[] = [
     image: trufadoWhey.url,
     category: "fit",
   },
-  {
-    id: 14,
-    name: "Morango Cravejado",
-    description: "Cookie trufado com morango e cobertura de chocolate branco.",
-    shortDescription: "Trufado com morango",
-    price: "R$ 15,90",
-    weight: "110-120g",
-    image: morangoCravejado.url,
-  },
+  // {
+  //   id: 5,
+  //   name: "Pistache",
+  //   description: "Cookie premium com recheio de creme de pistache. Sofisticado e delicioso.",
+  //   shortDescription: "Creme de pistache",
+  //   price: "R$ 15,00",
+  //   weight: "110-120g",
+  //   image: pistache,
+  // },
   // {
   //   id: 13,
   //   name: "Paçoca",
