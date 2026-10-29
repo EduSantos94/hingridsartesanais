@@ -79,7 +79,7 @@ const Catalogo = () => {
               variant={menu === "classic" ? "default" : "ghost"}
               size="sm"
               className="h-8 rounded-full px-4 text-xs sm:text-sm"
-              onClick={() => setMenu("classic")}
+              onClick={() => changeMenu("classic")}
             >
               Tradicionais
             </Button>
@@ -87,7 +87,7 @@ const Catalogo = () => {
               variant={menu === "fit" ? "default" : "ghost"}
               size="sm"
               className="h-8 rounded-full px-4 text-xs sm:text-sm"
-              onClick={() => setMenu("fit")}
+              onClick={() => changeMenu("fit")}
             >
               Fitness
             </Button>
@@ -101,15 +101,43 @@ const Catalogo = () => {
 
           {viewMode === "grid" ? (
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-              {list.map((cookie) => (
+              {paginatedList.map((cookie) => (
                 <CookieCardCompact key={cookie.id} cookie={cookie} />
               ))}
             </div>
           ) : (
             <div className="rounded-lg border bg-card p-3">
-              {list.map((cookie) => (
+              {paginatedList.map((cookie) => (
                 <CookieCardList key={cookie.id} cookie={cookie} />
               ))}
+            </div>
+          )}
+
+          {totalPages > 1 && (
+            <div className="mt-4 flex items-center justify-center gap-3">
+              <Button
+                variant="outline"
+                size="sm"
+                className="h-8 gap-1 px-3 text-xs"
+                disabled={currentPage === 1}
+                onClick={() => setPage(currentPage - 1)}
+              >
+                <ChevronLeft className="h-4 w-4" />
+                Anterior
+              </Button>
+              <span className="text-xs text-muted-foreground">
+                Página {currentPage} de {totalPages}
+              </span>
+              <Button
+                variant="outline"
+                size="sm"
+                className="h-8 gap-1 px-3 text-xs"
+                disabled={currentPage === totalPages}
+                onClick={() => setPage(currentPage + 1)}
+              >
+                Próxima
+                <ChevronRight className="h-4 w-4" />
+              </Button>
             </div>
           )}
         </div>
