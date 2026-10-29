@@ -4,18 +4,32 @@ import Footer from "@/components/Footer";
 import CookieCardCompact from "@/components/CookieCardCompact";
 import CookieCardList from "@/components/CookieCardList";
 import { classicCookies, fitCookies, type Cookie } from "@/data/cookies";
-import { ArrowLeft, LayoutGrid, List } from "lucide-react";
+import { ArrowLeft, ChevronLeft, ChevronRight, LayoutGrid, List } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 type ViewMode = "grid" | "list";
 type MenuTab = "classic" | "fit";
 
+const ITEMS_PER_PAGE = 6;
+
 const Catalogo = () => {
   const [viewMode, setViewMode] = useState<ViewMode>("grid");
   const [menu, setMenu] = useState<MenuTab>("classic");
+  const [page, setPage] = useState(1);
 
   const list: Cookie[] = menu === "fit" ? fitCookies : classicCookies;
+  const totalPages = Math.max(1, Math.ceil(list.length / ITEMS_PER_PAGE));
+  const currentPage = Math.min(page, totalPages);
+  const paginatedList = list.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  );
+
+  const changeMenu = (tab: MenuTab) => {
+    setMenu(tab);
+    setPage(1);
+  };
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
