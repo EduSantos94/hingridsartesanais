@@ -67,6 +67,17 @@ const Catalogo = () => {
               size="sm"
               className="h-8 rounded-full px-4 text-xs sm:text-sm"
               onClick={() => setMenu("classic")}
+            >
+              Tradicionais
+            </Button>
+            <Button
+              variant={menu === "fit" ? "default" : "ghost"}
+              size="sm"
+              className="h-8 rounded-full px-4 text-xs sm:text-sm"
+              onClick={() => setMenu("fit")}
+            >
+              Fitness
+            </Button>
           </div>
 
           {menu === "fit" && (
