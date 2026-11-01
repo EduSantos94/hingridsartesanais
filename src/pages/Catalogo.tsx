@@ -88,13 +88,13 @@ const Catalogo = () => {
 
           {viewMode === "grid" ? (
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-              {paginatedList.map((cookie) => (
+              {list.map((cookie) => (
                 <CookieCardCompact key={cookie.id} cookie={cookie} />
               ))}
             </div>
           ) : (
             <div className="rounded-lg border bg-card p-3">
-              {paginatedList.map((cookie) => (
+              {list.map((cookie) => (
                 <CookieCardList key={cookie.id} cookie={cookie} />
               ))}
             </div>
