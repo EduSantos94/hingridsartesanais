@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import CookieCardCompact from "@/components/CookieCardCompact";
 import CookieCardList from "@/components/CookieCardList";
 import { classicCookies, fitCookies, type Cookie } from "@/data/cookies";
-import { ArrowLeft, ChevronLeft, ChevronRight, LayoutGrid, List } from "lucide-react";
+import { ArrowLeft, LayoutGrid, List } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -66,18 +66,7 @@ const Catalogo = () => {
               variant={menu === "classic" ? "default" : "ghost"}
               size="sm"
               className="h-8 rounded-full px-4 text-xs sm:text-sm"
-              onClick={() => changeMenu("classic")}
-            >
-              Tradicionais
-            </Button>
-            <Button
-              variant={menu === "fit" ? "default" : "ghost"}
-              size="sm"
-              className="h-8 rounded-full px-4 text-xs sm:text-sm"
-              onClick={() => changeMenu("fit")}
-            >
-              Fitness
-            </Button>
+              onClick={() => setMenu("classic")}
           </div>
 
           {menu === "fit" && (
