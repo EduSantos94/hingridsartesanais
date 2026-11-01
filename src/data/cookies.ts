@@ -127,7 +127,7 @@ export const cookies: Cookie[] = [
   },
   {
     id: 11,
-    name: "Tradicional Fit",
+    name: "Zero Açúcar Proteico",
     description: "Massa sem açúcar e proteico 10g.",
     shortDescription: "Sem açúcar e proteico 10g",
     price: "R$ 17,90",
@@ -137,7 +137,7 @@ export const cookies: Cookie[] = [
   },
   {
     id: 12,
-    name: "Trufado com Whey",
+    name: "Zero Açúcar Trufado com Whey",
     description: "Massa sem açúcar trufado com whey com 15g de proteína.",
     shortDescription: "Sem açúcar, 15g de proteína",
     price: "R$ 19,90",
